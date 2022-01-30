@@ -14,5 +14,14 @@ public class Main {
         c) stworzyć objekty tych klas i wyświetlić przykładowe wyliczenia
         */
 
+        Prostokat prostokat1 = new Prostokat();
+        System.out.println(prostokat1.obwod(6,3));
+        System.out.println(prostokat1.pole(6,3));
+        prostokat1.nazwaFigury("prostokat");
+
+        Kwadrat kwadrat1 = new Kwadrat();
+        System.out.println(kwadrat1.obwod(5,6));
+        System.out.println(kwadrat1.pole(5,6));
+        kwadrat1.nazwaFigury("kwadrat");
     }
 }
