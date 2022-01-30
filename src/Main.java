@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main {
 
@@ -28,5 +29,31 @@ public class Main {
         c) stworzyć dowolny przykład z 2 lub 3 blokami catch i z blokiem finally,
          */
 
+        int[] tab1 = {1, 2, 3, 4, 5, 6};
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Podaj numer indeksu tablicy, ktory mam ci wyswietlic: ");
+        int liczba = scan.nextInt();
+
+        if (liczba > 5 || liczba < 0)
+        {
+            try {
+                System.out.println(tab1[liczba]);
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Blad! Podales index: " + liczba + ", a dozwolone sa od 0 do " + (tab1.length - 1));
+            }
+        }
+
+        try {
+            liczba = Integer.parseInt(scan.next());
+        } catch (NumberFormatException e) {
+            System.out.println("Blad, wprowadzony znak nie jest cyfra!");
+            throw e;
+        }
+
+        finally {
+            System.out.println("KONIEC PROGRAMU");
+        }
     }
 }
