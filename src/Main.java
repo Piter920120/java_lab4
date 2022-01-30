@@ -42,5 +42,36 @@ public class Main {
         b) dokończyć implementację metod z interfejsów,
         c) stworzyć pola w metodzie main() i wywołać metody
         */
+        Student student1 = new Student();
+        student1.setImie("Piotr");
+        student1.setNazwisko("Rynkowski");
+        student1.setWaga(75);
+        student1.setWzrost(180);
+        student1.setSemestr(4);
+        System.out.println(student1.toString());
+
+        Student student2 = new Student();
+        student2.setImie("Marcelina");
+        student2.setNazwisko("Wilczak");
+        student2.setWzrost(173);
+        student2.setWaga(60);
+        student2.setSemestr(3);
+        System.out.println(student2.toString());
+
+        Pracownik pracownik1 = new Pracownik();
+        pracownik1.setImie("Andrzej");
+        pracownik1.setNazwisko("Duda");
+        pracownik1.setWaga(80);
+        pracownik1.setWzrost(183);
+        pracownik1.setStanowisko("prezydent");
+        System.out.println(pracownik1.toString());
+
+        Pracownik pracownik2 = new Pracownik();
+        pracownik2.setImie("Jarosław");
+        pracownik2.setNazwisko("Kaczynski");
+        pracownik2.setWzrost(150);
+        pracownik2.setWaga(85);
+        pracownik2.setStanowisko("prezes");
+        System.out.println(pracownik2.toString());
     }
 }
